@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
+import NavigatorUtil from '../navigator/NavigatorUtil'
 
 /**
  * 欢迎页
@@ -16,7 +17,7 @@ export default class WelcomePage extends React.Component {
    */
   public componentDidMount() {
       this.timer = setTimeout(() => {
-          // TODO 进入主页
+        NavigatorUtil.resetToHomePage(this.props);
       }, 2000);
   }
 
