@@ -23,6 +23,7 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import Feather from 'react-native-vector-icons/Feather'
 
 const App: () => React$Node = () => {
   return (
@@ -38,7 +39,17 @@ const App: () => React$Node = () => {
               <Text style={styles.footer}>Engine: Hermes</Text>
             </View>
           )}
+
+
           <View style={styles.body}>
+          <View style={{flex:1}}> 
+              <Text>矢量图标
+                <Feather 
+                name="airplay"
+                size={42}
+                color="red"/>
+              </Text>
+          </View>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>
