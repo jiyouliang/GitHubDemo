@@ -24,6 +24,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import Feather from 'react-native-vector-icons/Feather'
+import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
 
 const App: () => React$Node = () => {
   return (
@@ -42,14 +43,18 @@ const App: () => React$Node = () => {
 
 
           <View style={styles.body}>
-          <View style={{flex:1}}> 
+            <View style={{ flex: 1, flexDirection: 'column' }}>
               <Text>矢量图标
-                <Feather 
+              </Text>
+              <Feather
                 name="airplay"
                 size={42}
-                color="red"/>
-              </Text>
-          </View>
+                color="red" />
+                <FontAwesome5 
+                name='hotjar'
+                size={25} 
+                color='red' />
+            </View>
             <View style={styles.sectionContainer}>
               <Text style={styles.sectionTitle}>Step One</Text>
               <Text style={styles.sectionDescription}>

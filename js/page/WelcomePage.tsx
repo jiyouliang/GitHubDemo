@@ -18,7 +18,7 @@ export default class WelcomePage extends React.Component {
   public componentDidMount() {
       this.timer = setTimeout(() => {
         NavigatorUtil.resetToHomePage(this.props);
-      }, 2000);
+      }, 1000);
   }
 
   public render() {
